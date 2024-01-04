@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HighJacking</title>
+</head>
+<body>
+    <H1>Forms Demo</H1>
+    
+    <Div class="phonenumber">
+        <form action="/tacos">
+            <P>
+            <label for="nome">digite seu nome:</label>
+            <input name="username" type="text" id="nome">
+            </P>
+            <button onclick="alert('Helloworld!')">
+                submit
+            </button>
+        </form>
+    </Div>
+
+    <Div class="temcelular">
+        <form action="">
+            <p>
+            <label for="sim">tem celular?</label>
+            <input type="checkbox" id="sim">
+            </P>
+        </form>
+    <hr>
+    </Div>
+    
+    <Div class="phonenumber">
+        <form action="">
+            <p>
+            <label for="number2">digite seu numero:</label>
+            <input type="number" id="number2" min="6"  max="23">
+            </P>
+        </form>
+    </Div>
+    
+    <Div class="qualcor">
+        <form action="tacos">
+            <p>
+            <label for="color">qual a cor?:</label>
+            <input type="color" id="color">
+            </P>
+        </form>
+    </Div>
+
+    <hr>
+    <h2>HighJacking<h2>
+    <h3>searches</h3>
+    
+    <form action="https://www.youtube.com/results?">
+        <input type="text" name="search_query" id="">
+        <button>
+            search on youtube
+        </button>
+    </form>
+    <br>
+    <form action="https://www.google.com.br/search">
+        <input type="text" name="q">
+        <button>search on google</button>
+    </form>
+
+
+    <h2>more inputs</h2>
+
+    <form action="/birds">
+        <fieldset>
+        <input type="checkbox" name="agree" id="agree">
+        <label for="agree">i agree to everything</label>
+        
+            <br>
+            <label for="1">1</label>
+            <input type="radio" name="size" id="1" value="1">
+            <br>
+            <label for="2">2</label>
+            <input type="radio" name="size"id="2" value="2">
+            <br>
+            <label for="3">3</label>
+            <input type="radio" name="size"id="3"value="3">
+        </fieldset>
+        <p>
+            <label for="">Escolha uma comida</label>
+            <select name="comida" id="comida">
+                <option value="" selected>--escolha um prato--</option>
+                <option value="peixe">peixe</option>
+                <option value="carne">carne</option>
+                <option value="frango">frango</option>
+            </select>
+        </p>
+        <p>
+            <label for="grau">grau de 1 a 10</label>
+            <input type="range"name="grau"id="grau" max="10" min="0" value="7">
+        </p>
+        <p>
+            <label for="pedido">pedidos especiais</label>
+            <br>
+            <textarea name="pedido" id="pedido" cols="30" rows="10" placeholder="digite aqui!"></textarea>
+        </p> 
+        <button>submit</button>
+
+    </form>
+    <form> 
+        <p>
+            <label>Site: <input type="url" list="sites" name="link"></label>
+        </p> 
+        <datalist id="sites">
+            <option label="Google" value="http://www.google.com"> </option> 
+            <option label="Globo" value="http://www.globo.com"> </option> 
+            <option label="UOL" value="http://www.uol.com.br"> </option> 
+        </datalist>
+    </form> 
+
+    <form action="">
+        <p>
+            <label for="chosecolor">Escolha uma cor:
+            <input type="color" id="cor" onchange="document.getElementById('cor_selecionada').value=document.getElementById('cor').value;">
+            </label>
+        </p>
+        <p>
+            <label for="chasecolor"> Cor selecionada : <input id="cor_selecionada" type="text"/>
+            </label>
+        </p>
+    </form>
+
+
+</body>
+
+</html>
