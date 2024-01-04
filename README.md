@@ -1,2 +1,2 @@
-# estudos
-estudos e projetos
+# Estudos
+Estudos e Projetos
